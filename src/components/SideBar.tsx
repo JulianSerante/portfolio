@@ -12,13 +12,13 @@ export default function SideBar() {
                 alt="user avatar"
                 className='w-32 h-32 mx-auto'
             />
-            <h3 className='my-4 text-3xl font-medium tracking-wider'>
+            <h3 className='my-4 text-3xl font-medium tracking-wider text-black'>
                 <span>Julian </span>
                 Serante
             </h3>
-            <p className='px-2 py-1 my-3 bg-gray-200 rounded-full'>Full Stack Web Developer</p>
+            <p className='px-2 py-1 my-3 text-black bg-gray-200 rounded-full'>Full Stack Web Developer</p>
             <a 
-                className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full' 
+                className='flex items-center justify-center px-2 py-1 my-3 text-black bg-gray-200 rounded-full' 
                 href='' 
                 download='name'
             >
@@ -35,7 +35,7 @@ export default function SideBar() {
                 </a>
             </div>
 
-            <div className='py-4 my-5 bg-gray-200' style={{marginLeft:'-1rem', marginRight: '-1rem'}}>
+            <div className='py-4 my-5 text-black bg-gray-200' style={{marginLeft:'-1rem', marginRight: '-1rem'}}>
                 <div className='flex items-center justify-center space-x-2'>
                     <GrLocation/>
                     <span>Buenos Aires, Argentina</span>

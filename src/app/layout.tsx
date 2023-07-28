@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" >
-      <body className={`bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-black-500 dark:to-black-700 ${chacka.className}`}>
+    <html>
+      <body className={`bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-dark-500 dark:to-dark-700 dark:text-white ${chacka.className}`}>
           {children}
       </body>
     </html>
