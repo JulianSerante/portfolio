@@ -1,6 +1,10 @@
 import {HiDesktopComputer} from 'react-icons/hi'
 import {FaServer, FaDatabase} from 'react-icons/fa'
-import { IService } from './type'
+import {RiJavascriptFill} from 'react-icons/ri'
+import {BiLogoTypescript, BiSolidFileHtml, BiSolidFileCss, BiLogoReact, BiLogoRedux, BiLogoBootstrap, BiLogoTailwindCss, BiLogoNodejs, BiLogoPostgresql, BiLogoMongodb, BiLogoGit, BiCircle} from 'react-icons/bi'
+import {SiExpress, SiGithubactions, SiMongodb, SiMongoose, SiNextdotjs, SiPostman, SiSequelize} from 'react-icons/si'
+import { MdOutlineWork } from 'react-icons/md'
+import { IService, ISkill } from './type'
 
 
 export const services:IService[] = [
@@ -18,5 +22,129 @@ export const services:IService[] = [
         Icon:FaDatabase,
         title:"Database",
         about:'I can handle <b> SQL databases </b> such as <b>PostgreSQL</b> and <b>No SQL databases</b> like <b>MongoDB</b>'
+    },
+    {
+        Icon:MdOutlineWork,
+        title:"Agile methodologies & workflow",
+        about:'I am familiar with agile work methodologies such as <b> SCRUM </b> and with <b>Git Flow</b> as a workflow'
     }
+]
+
+export const languages:ISkill[] = [
+    {
+        name:'JavaScript',
+        level:'65%',
+        Icon:RiJavascriptFill
+    },
+    {
+        name:'TypeScript',
+        level:'55%',
+        Icon:BiLogoTypescript
+    },
+    {
+        name:'HTML',
+        level:'70%',
+        Icon:BiSolidFileHtml
+    },
+    {
+        name:'CSS',
+        level:'60%',
+        Icon:BiSolidFileCss
+    }
+]
+
+export const frontend:ISkill[] = [
+    {
+        name:'React',
+        level:'75%',
+        Icon:BiLogoReact
+    },
+    {
+        name:'Next.JS',
+        level:'70%',
+        Icon:SiNextdotjs
+    },
+    {
+        name:'Redux',
+        level:'60%',
+        Icon:BiLogoRedux
+    },
+    {
+        name:'Bootstrap',
+        level:'60%',
+        Icon:BiLogoBootstrap
+    },
+    {
+        name:'Tailwind CSS',
+        level:'70%',
+        Icon:BiLogoTailwindCss
+    },
+]
+
+export const backend:ISkill[] = [
+
+    {
+        name:'NodeJS',
+        level:'75%',
+        Icon:BiLogoNodejs
+    },
+    {
+        name:'Express',
+        level:'70%',
+        Icon:SiExpress
+    },
+]
+
+export const database:ISkill[] = [
+    {
+        name:'PostgreSQL',
+        level:'65%',
+        Icon:BiLogoPostgresql
+    },
+    {
+        name:'Sequelize',
+        level:'65%',
+        Icon:SiSequelize
+    },
+    {
+        name:'MongoDB',
+        level:'55%',
+        Icon:BiLogoMongodb
+    },
+    {
+        name:'Mongoose',
+        level:'50%',
+        Icon:SiMongoose
+    },
+]
+
+export const tools:ISkill[] = [
+    {
+        name:'Postman',
+        level:'80%',
+        Icon:SiPostman
+    },
+    {
+        name:'Git',
+        level:'70%',
+        Icon:BiLogoGit
+    },
+    {
+        name:'MongoDB Atlas',
+        level:'65%',
+        Icon:SiMongodb
+    },
+]
+
+export const workMethods:ISkill[] = [
+    {
+        name:'Git Flow',
+        level:'70%',
+        Icon:SiGithubactions
+    },
+    {
+        name:'SCRUM',
+        level:'85%',
+        Icon:BiCircle
+    },
 ]

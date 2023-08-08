@@ -14,7 +14,7 @@ const NavItem: FunctionComponent<{
       <Link legacyBehavior href={route}>
          <a id='link'>
             <span
-               className='mx-2 text-black cursor-pointer hover:border-b-4 hover:text-green'
+               className='mx-2 cursor-pointer hover:border-b-4 hover:text-green'
                onClick={() => setActive(name)}>
                {name}
             </span>
@@ -35,7 +35,7 @@ const Navbar = () => {
    }, [])
 
    return (
-      <div className='flex items-center justify-between px-5 py-3 my-3 border-b border-black rounded-b-lg'>
+      <div className='flex items-center justify-between px-5 py-3 my-3 border-b rounded-b-lg dark:border-blue-400'>
          <span className='text-xl font-bold border-b-4 text-green md:text-2xl border-green'>
             {active}
          </span>

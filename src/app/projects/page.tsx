@@ -3,7 +3,7 @@ import Layout from "../_app"
 const projects = () => {
   return (
     <Layout>
-      <div className="text-black">
+      <div>
         projects
       </div>
     </Layout>
