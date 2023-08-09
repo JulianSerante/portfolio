@@ -4,7 +4,7 @@ import {RiJavascriptFill} from 'react-icons/ri'
 import {BiLogoTypescript, BiSolidFileHtml, BiSolidFileCss, BiLogoReact, BiLogoRedux, BiLogoBootstrap, BiLogoTailwindCss, BiLogoNodejs, BiLogoPostgresql, BiLogoMongodb, BiLogoGit, BiCircle} from 'react-icons/bi'
 import {SiExpress, SiGithubactions, SiMongodb, SiMongoose, SiNextdotjs, SiPostman, SiSequelize} from 'react-icons/si'
 import { MdOutlineWork } from 'react-icons/md'
-import { IService, ISkill } from './type'
+import { IProject, IService, ISkill } from './type'
 
 
 export const services:IService[] = [
@@ -146,5 +146,25 @@ export const workMethods:ISkill[] = [
         name:'SCRUM',
         level:'85%',
         Icon:BiCircle
+    },
+]
+
+export const projects:IProject[] = [
+    {
+        name:"MarketX",
+        description:"This app is a result of a groupal proyect. It is a market place specialized in technology wher you can buy, sell, create a user, rate products, etc.",
+        image_path:"https://res.cloudinary.com/dmtzjtgy8/image/upload/f_auto,q_auto/stpgejzzwrpwgpm5qpve",
+        github_url:"https://github.com/Gabriel20Arr/marketX",
+        category:["next", "react", "express", "node", "redux toolkit", "mongo"],
+        key_techs:["NextJS 13", "Node.js", "Express", "MongoDB"]
+    },
+    {
+        name:"Pokedex 2.0",
+        description:"This Full-Stack SPA is based on Pokemon. It is a pokedex where you can see the data, search for an specific Pokemon, filter the Pokemons and create new Pokemons",
+        image_path:"https://res.cloudinary.com/dmtzjtgy8/image/upload/f_auto,q_auto/huvphieglx3ki32q4v4z",
+        github_url:"https://github.com/JulianSerante/Pokemon-Client-app",
+        githubBack_url:"https://github.com/JulianSerante/Pokemon-Api-app",
+        category:["react", "express", "node", "redux", "postgre"],
+        key_techs:["React", "Node.js", "Express", "PostgreSQL"]
     },
 ]
