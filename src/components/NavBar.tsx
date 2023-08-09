@@ -36,7 +36,7 @@ const Navbar = () => {
 
    return (
       <div className='flex items-center justify-between px-5 py-3 my-3 border-b rounded-b-lg dark:border-blue-400'>
-         <span className='text-xl font-bold border-b-4 text-green md:text-2xl border-green'>
+         <span className='text-xl font-bold border-b-4 text-green md:text-2xl border-green'>0
             {active}
          </span>
 
