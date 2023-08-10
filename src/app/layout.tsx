@@ -22,9 +22,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='2xl:w-full 2xl:h-full'>
-      <body className={`h-full bg-fixed m-0 bg-gradient-to-r from-green to-blue-500 dark:from-dark-500 dark:to-dark-700 dark:text-white ${chacka.className}`} style={{marginBottom:'0px'}}>
+      <head>
+        <title>JS Portfolio</title>
+      </head>
+      <body className={`h-full bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-dark-500 dark:to-dark-700 dark:text-white ${chacka.className}`} style={{marginBottom:'0px'}}>
         <Providers>
-          {children}
+          <div className='h-full lg:flex lg:justify-center lg:items-center lg:h-screen'>
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

@@ -18,14 +18,14 @@ export default function SideBar() {
             <img 
                 src="https://res.cloudinary.com/dmtzjtgy8/image/upload/v1689709315/cyubbk8fm8ciuqcx5z5l.png" 
                 alt="user avatar"
-                className='w-32 h-32 mx-auto'
+                className='w-40 h-40 mx-auto'
             />
             <h3 className='my-4 text-3xl font-medium tracking-wider'>
                 <span>Julian </span>
                 Serante
             </h3>
             <p className='px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500 dark:text-white '>Full Stack Web Developer</p>
-            <div className='flex flex-row justify-between'>
+            <div className='flex flex-row justify-around'>
                 <a 
                     className="flex items-center justify-center px-2 py-1 my-2 mr-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
                     href='' 
@@ -42,7 +42,7 @@ export default function SideBar() {
                 </a>
             </div>
 
-            <div className='flex justify-around w-9/12 mx-auto my-5 text-green md:w-full'>
+            <div className='flex w-9/12 mx-auto my-5 justify-evenly text-green md:w-full'>
                 <a href="https://www.linkedin.com/in/julián-agustín-serante-742436124/">
                     <AiFillLinkedin className='w-8 h-8 cursor-pointer'/>
                 </a>
