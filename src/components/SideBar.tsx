@@ -31,14 +31,14 @@ export default function SideBar() {
                     href='' 
                     download='name'
                 >
-                    <GiTie className='w-6 h-6'/> Download CV in English
+                    <GiTie className='w-6 h-6'/> Download English CV
                 </a>
                 <a 
                     className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
                     href='' 
                     download='name'
                 >
-                    <GiTie className='w-6 h-6'/> Download CV in Spanish
+                    <GiTie className='w-6 h-6'/> Download Spanish CV
                 </a>
             </div>
 
