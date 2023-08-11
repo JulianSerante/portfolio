@@ -21,13 +21,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en' className='2xl:w-full 2xl:h-full'>
+    <html lang='en' className='md:h-full 2xl:w-full 2xl:h-full'>
       <head>
         <title>JS Portfolio</title>
       </head>
       <body className={`h-full bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-dark-500 dark:to-dark-700 dark:text-white ${chacka.className}`} style={{marginBottom:'0px'}}>
         <Providers>
-          <div className='h-full lg:flex lg:justify-center lg:items-center lg:h-screen'>
+          <div className='h-screen 2xl:flex 2xl:justify-center 2xl:items-center 2xl:h-screen'>
             {children}
           </div>
         </Providers>
