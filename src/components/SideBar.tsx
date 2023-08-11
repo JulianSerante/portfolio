@@ -25,9 +25,9 @@ export default function SideBar() {
                 Serante
             </h3>
             <p className='px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500 dark:text-white '>Full Stack Web Developer</p>
-            <div className='flex flex-row justify-around'>
+            <div className='flex flex-col justify-around 2xl:flex-row'>
                 <a 
-                    className="flex items-center justify-center px-2 py-1 my-2 mr-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
+                    className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
                     href='' 
                     download='name'
                 >

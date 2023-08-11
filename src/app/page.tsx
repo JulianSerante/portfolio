@@ -13,7 +13,7 @@ export default function About() {
           Connect with me on LinkedIn or contact me by email to explore possible collaborations.
         </h5>
         <br />
-        <div className="flex-grow p-4 pb-5 bg-gray-400 dark:bg-gray-800" style={{ marginLeft: "-2.75rem", marginRight: "-2.75rem" }}>
+        <div className="flex-grow p-4 pb-5 bg-gray-300 dark:bg-gray-800" style={{ marginLeft: "-2.75rem", marginRight: "-2.75rem" }}>
           <h6 className="my-3 text-xl font-bold tracking-wide">What I offer?</h6>
           <div>
             <AboutData />
