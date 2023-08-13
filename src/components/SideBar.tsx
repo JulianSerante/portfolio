@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GrLocation } from 'react-icons/gr';
 import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
  
 export default function SideBar() {
 
@@ -15,10 +16,13 @@ export default function SideBar() {
 
     return(
         <div>
-            <img 
-                src="https://res.cloudinary.com/dmtzjtgy8/image/upload/v1689709315/cyubbk8fm8ciuqcx5z5l.png" 
-                alt="user avatar"
-                className='w-40 h-40 mx-auto'
+            <Image 
+                src='/images/profile-pic.png'
+                alt='avatar'
+                className="mx-auto"
+                width={200}
+                height={200}
+                quality={100}
             />
             <h3 className='my-4 text-3xl font-medium tracking-wider'>
                 <span>Julian </span>
