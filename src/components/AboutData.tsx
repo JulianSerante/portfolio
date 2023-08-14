@@ -1,15 +1,19 @@
+'use client'
+
 import { services } from "@/data";
 import ServiceCard from "./ServiceCard";
+import { motion } from "framer-motion";
+import { fadeInUp, stagger } from "../../animations";
 
 const AboutData = () => {
   return (
-    <div className='grid gap-6 my-3 md:grid-cols-2'>
+    <motion.div className='grid gap-6 my-3 md:grid-cols-2' variants={stagger} initial='initial' animate='animate'>
       {services.map((service) => (
-        <div key={service.title} className="col-span-2 p-2 bg-gray-100 rounded-lg dark:bg-dark-200 md:col-span-1 ">
+        <motion.div key={service.title} className="col-span-2 p-2 bg-gray-100 rounded-lg dark:bg-dark-200 md:col-span-1 " variants={fadeInUp} >
           <ServiceCard service={service} />
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
 

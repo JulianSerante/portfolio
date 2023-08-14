@@ -1,3 +1,5 @@
+'use client'
+
 import { backend, database, frontend, languages, tools, workMethods } from "@/data"
 import { Bar } from "./Bar"
 

@@ -6,6 +6,8 @@ import ProjectCard from "@/components/ProjectCard"
 import ProjectsNavBar from "@/components/ProjectsNavBar"
 import { useState } from "react"
 import { Category } from "@/type"
+import { motion } from "framer-motion"
+import { fadeInUp, stagger } from "../../../animations"
 
 const Projects = () => {
 
@@ -29,15 +31,15 @@ const Projects = () => {
       <div className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
         <ProjectsNavBar handleFilterCategory = {handleFilterCategory} active = {active}/>
 
-        <div className="relative grid grid-cols-12 gap-4 my-3">
+        <motion.div className="relative grid grid-cols-12 gap-4 my-3" variants={stagger} initial='initial' animate='animate'>
           {
             projects.map(project => (
-              <div className="col-span-12 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 sm:col-span-6 lg:col-span-4" key={project.name}>
-                <ProjectCard project={project} key={project.name}/>
-              </div>
+              <motion.div className="col-span-12 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 sm:col-span-6 lg:col-span-4" key={project.name} variants={fadeInUp}>
+                <ProjectCard project={project}/>
+              </motion.div>
             ))
           }
-        </div>
+        </motion.div>
       </div>
     </Layout>
   )
