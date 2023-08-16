@@ -27,9 +27,9 @@ export default function RootLayout({
       </head>
       <body className={`h-full bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-dark-500 dark:to-dark-700 dark:text-white ${chacka.className}`} style={{marginBottom:'0px'}}>
         <Providers>
-          <div className='h-screen 2xl:flex 2xl:justify-center 2xl:items-center 2xl:h-screen'>
-            {children}
-          </div>
+            <div className='h-screen 2xl:flex 2xl:justify-center 2xl:items-center 2xl:h-screen'>
+              {children}
+            </div>
         </Providers>
       </body>
     </html>
