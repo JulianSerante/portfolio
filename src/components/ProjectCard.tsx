@@ -11,6 +11,8 @@ import { fadeInUp, stagger } from "../../animations";
 const ProjectCard:FunctionComponent<{
 
     project:IProject;
+    showDetail:null | number;
+    setShowDetail:(id: null | number ) => void
 
 }> = ({
     project:{
@@ -22,10 +24,13 @@ const ProjectCard:FunctionComponent<{
         githubBack_url,
         category,
         key_techs,
-    }
+        id
+    },
+    showDetail,
+    setShowDetail,
 }) => {
 
-    const [showDetail, setShowDetail] = useState(false)
+
 
     return (
         <div className="px-5 py-2">
@@ -33,7 +38,7 @@ const ProjectCard:FunctionComponent<{
                 src={image_path} 
                 alt={name} 
                 className="rounded-md cursor-pointer"
-                onClick={() => setShowDetail(true)}
+                onClick={() => setShowDetail(id)}
                 width={500}
                 height={350}
                 style={{
@@ -44,10 +49,10 @@ const ProjectCard:FunctionComponent<{
             <p className="my-2 text-center">{name}</p>
 
         {
-            showDetail &&
-            <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 dark:bg-dark-100 dark:text-gray-100 md:grid-cols-2 gap-x-12 ">
+            showDetail === id &&
+            <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-4 text-black bg-gray-100 rounded-lg md:p-10 dark:bg-dark-100 dark:text-gray-100 md:grid-cols-2 gap-x-12 ">
                 <motion.div variants={stagger} initial='initial' animate='animate'>
-                    <motion.div variants={fadeInUp}>
+                    <motion.div variants={fadeInUp} className="border-4 border-blue-400 rounded-lg dark:border-green-400">
                         <Image 
                             src={image_path} 
                             alt={name}
@@ -93,7 +98,7 @@ const ProjectCard:FunctionComponent<{
                 </motion.div>
 
                 <button 
-                    onClick={() => setShowDetail(false)}
+                    onClick={() => setShowDetail(null)}
                     className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
                 >
                         <MdClose size={30}/>

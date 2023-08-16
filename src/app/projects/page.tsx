@@ -14,6 +14,8 @@ const Projects = () => {
   const [projects, setProjects] = useState(projectsData)
   const [active, setActive] = useState('all')
 
+  const [showDetail, setShowDetail] = useState< number | null >(null)
+
   const handleFilterCategory = (category:Category | 'all') => {
     if(category === 'all'){
       setProjects(projectsData);
@@ -36,11 +38,18 @@ const Projects = () => {
             {
               projects.map(project => (
                 <motion.div className="col-span-12 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 sm:col-span-6 lg:col-span-4" key={project.name} variants={fadeInUp}>
-                  <ProjectCard project={project}/>
+                  <ProjectCard 
+                    project={project} 
+                    showDetail={showDetail} 
+                    setShowDetail={setShowDetail}/>
                 </motion.div>
               ))
             }
           </motion.div>
+          <div className="flex justify-center mt-10 mb-4 md:mt-32">
+            <h2 className="px-4 py-1 text-xl font-bold tracking-wider bg-blue-300 rounded-md dark:bg-green-400 dark:text-black">More projects coming soon...</h2>
+          </div>
+
         </motion.div>
       </AnimatePresence>
     </Layout>

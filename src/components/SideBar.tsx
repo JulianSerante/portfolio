@@ -28,19 +28,19 @@ export default function SideBar() {
                 <span>Julian </span>
                 Serante
             </h3>
-            <p className='px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500 dark:text-white '>Full Stack Web Developer</p>
+            <p className='px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500 dark:text-white'>Full Stack Web Developer</p>
             <div className='flex flex-col justify-around 2xl:flex-row'>
                 <a 
-                    className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
-                    href='' 
-                    download='name'
+                    className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500 " 
+                    href='/assets/English CV - Julian Serante.pdf' 
+                    download='English CV - Julian Serante.pdf'
                 >
                     <GiTie className='w-6 h-6'/> Download English CV
                 </a>
                 <a 
                     className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
-                    href='' 
-                    download='name'
+                    href='/assets/CV - Julian Serante.pdf' 
+                    download='CV - Julian Serante.pdf'
                 >
                     <GiTie className='w-6 h-6'/> Download Spanish CV
                 </a>
@@ -64,10 +64,10 @@ export default function SideBar() {
             </div>
 
 
-            <button className='w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none' onClick={() => window.open('mailto:julian.serante@gmail.com')}>Email me</button>
+            <button className='w-8/12 px-5 py-2 font-bold text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none' onClick={() => window.open('mailto:julian.serante@gmail.com')}>Email me</button>
             <button 
             onClick={changeTheme}
-            className='w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none'
+            className='w-8/12 px-5 py-2 my-4 font-bold text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none'
             >
                 Change theme
             </button>

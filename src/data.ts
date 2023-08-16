@@ -151,6 +151,7 @@ export const workMethods:ISkill[] = [
 
 export const projects:IProject[] = [
     {
+        id:1,
         name:"MarketX",
         description:"This app is a result of a groupal proyect. It is a market place specialized in technology wher you can buy, sell, create a user, rate products, etc.",
         image_path:"/images/MarketX.jpeg",
@@ -159,6 +160,7 @@ export const projects:IProject[] = [
         key_techs:["NextJS 13", "Node.js", "Express", "MongoDB"]
     },
     {
+        id:2,
         name:"Pokedex 2.0",
         description:"This Full-Stack SPA is based on Pokemon. It is a pokedex where you can see the data, search for an specific Pokemon, filter the Pokemons and create new Pokemons",
         image_path:"/images/Pokedex.jpeg",
