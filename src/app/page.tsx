@@ -4,7 +4,8 @@ import AboutData from "@/components/AboutData";
 import Layout from "./_app";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "../../animations";
-import { AnimatePresence } from "framer-motion"; 
+import { AnimatePresence } from "framer-motion";
+
 
 export default function About() {
   return (
@@ -19,7 +20,13 @@ export default function About() {
           <motion.h5 className="text-lg text-justify" variants={fadeInUp} initial='initial' animate='animate'>
             Connect with me on LinkedIn or contact me by email to explore possible collaborations.
           </motion.h5>
-
+          <br />
+          <motion.h5 className="text-xl italic font-bold tracking-wide text-justify" variants={fadeInUp} initial='initial' animate='animate'>
+            About this portfolio
+          </motion.h5>
+          <motion.h5 className="text-lg text-justify" variants={fadeInUp} initial='initial' animate='animate'>
+            This portfolio has been developed using Typescript and technologies like React with Next.JS 13 as framework. TailwindCSS has been used for the styles. 
+          </motion.h5>
           <br />
           <div className="flex-grow p-4 pb-5 bg-gray-300 dark:bg-gray-800" style={{ marginLeft: "-2.75rem", marginRight: "-2.75rem" }}>
             <h6 className="my-3 text-xl font-bold tracking-wide">What I offer?</h6>
