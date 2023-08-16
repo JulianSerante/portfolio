@@ -1,9 +1,11 @@
+'use client'
+
 import { backend, database, frontend, languages, tools, workMethods } from "@/data"
 import { Bar } from "./Bar"
 
 export const Technologies = () => {
     return(
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
 
                 <div>
                     <h5 className="my-3 text-xl font-bold">Languages</h5>

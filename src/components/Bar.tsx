@@ -1,19 +1,20 @@
 import { ISkill } from "@/type"
 import { FunctionComponent } from "react"
+import { motion } from "framer-motion"
+import { spring } from "../../animations"
 
-export const Bar:FunctionComponent<{
+export const Bar:FunctionComponent <{
     data:ISkill
-}> = ({data: {Icon, level, name}}) => {
+}> = ({data: {Icon, name}}) => {
+
     return (
-        <div className="my-2 font-bold text-white bg-gray-300 rounded-full">
-            <div className="flex items-center object-fill px-2 py-1 rounded-full bg-gradient-to-r from-green-400 to-blue-500" style={{width: level}}>
+        <motion.div className="grid w-auto my-2 font-bold text-white rounded-md bg-gradient-to-r from-blue-500 to-green-400" variants={spring} initial='initial' animate='animate'>
+            <div className="flex items-center px-2 py-1">
                 <div className="mr-2">
-                    <Icon className="w-5 h-5 text-blue-950"/>
+                    <Icon className="w-6 h-auto text-dark"/>
                 </div>
-                <div>
                     <span className="drop-shadow">{name}</span>
-                </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

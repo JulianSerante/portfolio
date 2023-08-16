@@ -7,3 +7,13 @@ body {
   font-family: sans-serif;
   color: black;
 }
+
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(to right bottom, #00f260, #0579e6);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 4px;
+}

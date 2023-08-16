@@ -151,17 +151,19 @@ export const workMethods:ISkill[] = [
 
 export const projects:IProject[] = [
     {
+        id:1,
         name:"MarketX",
         description:"This app is a result of a groupal proyect. It is a market place specialized in technology wher you can buy, sell, create a user, rate products, etc.",
-        image_path:"https://res.cloudinary.com/dmtzjtgy8/image/upload/f_auto,q_auto/stpgejzzwrpwgpm5qpve",
+        image_path:"/images/MarketX.jpeg",
         github_url:"https://github.com/Gabriel20Arr/marketX",
         category:["next", "react", "express", "node", "redux toolkit", "mongo"],
         key_techs:["NextJS 13", "Node.js", "Express", "MongoDB"]
     },
     {
+        id:2,
         name:"Pokedex 2.0",
         description:"This Full-Stack SPA is based on Pokemon. It is a pokedex where you can see the data, search for an specific Pokemon, filter the Pokemons and create new Pokemons",
-        image_path:"https://res.cloudinary.com/dmtzjtgy8/image/upload/f_auto,q_auto/huvphieglx3ki32q4v4z",
+        image_path:"/images/Pokedex.jpeg",
         github_url:"https://github.com/JulianSerante/Pokemon-Client-app",
         githubBack_url:"https://github.com/JulianSerante/Pokemon-Api-app",
         category:["react", "express", "node", "redux", "postgre"],
